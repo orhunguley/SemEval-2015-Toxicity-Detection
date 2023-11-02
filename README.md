@@ -28,7 +28,7 @@ To generate the predictions for the test set, run ```python predict_scores.py```
 
 As it can be seen from the table, there is a trade-off between precision and recall for paraphrase identification. Hybrid model has better recall and only_similarity model has better precision. However, F1 score encourages only_similarity_model approach.
 
-##Exercise 2
+## Exercise 2
 ### Scenerio A -- Detoxify and SHAP for User-Generated Content Moderation
 #### What is Detoxify?
 
