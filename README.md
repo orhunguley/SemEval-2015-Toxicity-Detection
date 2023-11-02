@@ -32,7 +32,7 @@ As it can be seen from the table, there is a trade-off between precision and rec
 ### Scenerio A -- Detoxify and SHAP for User-Generated Content Moderation
 #### What is Detoxify?
 
-Detoxify is a pre-trained language model that has been specifically trained to identify and classify toxic language. It is a good choice for Scenerio A user-generated content moderation because it does not require a large dataset of labeled user-generated content to train and computational resources. The model outputs the probability scores for the following classes:
+[Detoxify](https://github.com/unitaryai/detoxify) is a pre-trained language model that has been specifically trained to identify and classify toxic language. It is a good choice for Scenerio A user-generated content moderation because it does not require a large dataset of labeled user-generated content to train and computational resources. The model outputs the probability scores for the following classes:
 - `toxic`
 - `severe_toxic`
 - `obscene`
@@ -42,7 +42,7 @@ Detoxify is a pre-trained language model that has been specifically trained to i
 
 #### What is SHAP?
 
-SHAP (SHapley Additive exPlanations) is a model explainability tool that can help you to understand how Detoxify is making its decisions. This information can be used to improve the accuracy of the model and to identify any potential biases.
+[SHAP (SHapley Additive exPlanations)](https://shap.readthedocs.io/en/latest/) is a model explainability tool that can help you to understand how Detoxify is making its decisions. This information can be used to improve the accuracy of the model and to identify any potential biases.
 
 #### How to use Detoxify and SHAP for user-generated content moderation
 
