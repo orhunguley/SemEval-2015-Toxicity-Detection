@@ -1,6 +1,6 @@
 # Project Manual
 ## Exercise 1
-In exercise 1, I trained 2 different models for SemEval Task 1. For paraphrase identification task, I utilized a binary classifier model to detect if given sentence pairs are paraphrase or not. For the similarity task, I 
+In exercise 1, I trained 2 different models for SemEval Task 1. For paraphrase identification task, I utilized a binary classifier model to detect if given sentence pairs are paraphrase or not. For sentence similarity, I trained a regressor to minimize the sentence embeddings given 2 sentence pairs. For both approach, I utilized pre-trained language transformers to increase the speed of learning. This approach helped me to achieve good results in short training time.
 ### Paraphrase Detection
 Paraphrase detection model uses pre-trained distilled version of the [RoBERTa-base](https://huggingface.co/distilroberta-base) model. The model uses [distilroberta-base](https://huggingface.co/distilroberta-base) as a cross-encoder and adds a classification head on top to predict the probability of a sentece pair are paraphrase of each other.
 
@@ -85,4 +85,19 @@ Question: Is this content problematic? If yes, for what reasons it should be ban
 
 ***Computing power:*** 
 ***A powerful computing platform:*** Training a large and complex LLM can be computationally expensive. To train your model quickly and efficiently, you will need access to a powerful computing platform, such as a GPU cluster or a cloud computing platform.
-***Cloud Computing Services:*** Utilize cloud services such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP) for scalability and reliability. Set up virtual machines and containers to run the system components.
+***Scalable Infrastructure:*** Utilize cloud services such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP) for scalability and reliability. Set up virtual machines, containers and container orchestrators such as Kubernetes to run the system components. This will help with the scalability as the traffic is expected to grow over time.
+
+#### Metrics
+
+***ROGUE (Recall-Oriented Understudy for Gisting Evaluation)*** measures ***precision***: how much the words (and/or n-grams) in the machine generated summaries appeared in the human reference summaries.
+***BLEU (Bilingual Evaluation Understudy)*** measures ***recall***: how much the words (and/or n-grams) in the human reference summaries appeared in the machine generated summaries.
+
+A better metric for evaluating false positives and false negatives equally is the **F1 score**, which is the harmonic mean of recall and precision.
+
+The F1 score is calculated as follows:
+
+```F1 score = 2 * BLEU * ROGUE / (BLEU + ROGUE)```
+
+which can be modified as:
+
+```F1 score = 2 * BLEU * ROGUE / (BLEU + ROGUE)```
