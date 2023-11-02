@@ -85,6 +85,7 @@ Question: Is this content problematic? If yes, for what reasons it should be ban
 
 ***Computing power:*** 
 ***A powerful computing platform:*** Training a large and complex LLM can be computationally expensive. To train your model quickly and efficiently, you will need access to a powerful computing platform, such as a GPU cluster or a cloud computing platform.
+
 ***Scalable Infrastructure:*** Utilize cloud services such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP) for scalability and reliability. Set up virtual machines, containers and container orchestrators such as Kubernetes to run the system components. This will help with the scalability as the traffic is expected to grow over time.
 
 #### Metrics
