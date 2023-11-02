@@ -1,5 +1,5 @@
 # Project Manual
-##Exercise 1
+## Exercise 1
 In exercise 1, I trained 2 different models for SemEval Task 1. For paraphrase identification task, I utilized a binary classifier model to detect if given sentence pairs are paraphrase or not. For the similarity task, I 
 ### Paraphrase Detection
 Paraphrase detection model uses pre-trained distilled version of the [RoBERTa-base](https://huggingface.co/distilroberta-base) model. The model uses [distilroberta-base](https://huggingface.co/distilroberta-base) as a cross-encoder and adds a classification head on top to predict the probability of a sentece pair are paraphrase of each other.
