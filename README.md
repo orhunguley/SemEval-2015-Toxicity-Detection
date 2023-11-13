@@ -90,8 +90,8 @@ Question: Is this content problematic? If yes, for what reasons it should be ban
 
 #### Metrics
 
-***ROGUE (Recall-Oriented Understudy for Gisting Evaluation)*** measures ***precision***: how much the words (and/or n-grams) in the machine generated summaries appeared in the human reference summaries.
-***BLEU (Bilingual Evaluation Understudy)*** measures ***recall***: how much the words (and/or n-grams) in the human reference summaries appeared in the machine generated summaries.
+***ROGUE (Recall-Oriented Understudy for Gisting Evaluation)*** measures ***recall***: how much the words (and/or n-grams) in the machine generated summaries appeared in the human reference summaries.
+***BLEU (Bilingual Evaluation Understudy)*** measures ***precision***: how much the words (and/or n-grams) in the human reference summaries appeared in the machine generated summaries.
 
 A better metric for evaluating false positives and false negatives equally is the **F1 score**, which is the harmonic mean of recall and precision.
 
