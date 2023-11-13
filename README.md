@@ -98,7 +98,7 @@ A better metric for evaluating false positives and false negatives equally is th
 
 The F1 score is calculated as follows:
 
-```F1 score = 2 * BLEU * ROGUE / (BLEU + ROGUE)```
+```F1 score = 2 * precision * recall / (precision + recall)```
 
 which can be modified as:
 
